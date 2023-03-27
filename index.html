@@ -56,11 +56,36 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>Git is a free, open source version control system that allows web developers to collaborate on projects without overwriting each other's work. It also allows developers to rever to previous verions of the code if a problem is discovered.
-          <li>GitHub is the largest provider of internet hosting for software and web development code, and provides the version control functionality of Git in a central repository</li>
-          </li>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>Git is software on your computer that tracks changes that you make to your code.</li>
+          <li>GitHub is a cloud-based service that allows developers to store, manage, and collaborate on code inside repositories. It is connected to Git.</li>
+          <li>Repositories, or repos: used as folders to store the following:</li>
+            <ul>
+              <li>Files that contain code.</li>
+              <li>Files that contain other information about the code, like a README file.</li>
+              <li>The version history for all of the files in the repository.</li>
+            </ul>
+          
+          <li>Git commands: always start with git, and are used to save and track versions of your code. Using git commands, we can initaiate or create a repo, add our code to the repo, and view the different versions of our code, which are each stored in a unique commit.</li>
+          <ul>
+            <li>git revert: this command, followed by the SHA, is used to revert a project back to an older version. This is often used after discovering a bug in your code.</li>
+            <li>git status: checks what branch we are currently on</li>
+            <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+            <li>After making changes to a branch in VS Code, you need to sync your working branch back to the main branch. This is called the git flow.</li>
+            <li>Performing the Git flow:</li>
+            <ul>
+              <li>git add -A command to stage a commit for all files in the working branch.</li>
+              <li>git commit -m "insert description here" command commits any changes with a short descriptive message of the changes implemented.</li>
+              <li>git pull origin main command pulls the base branch into our feature branch so that it is syncing with the most up to date version in the repo</li>
+              <li>git push origin "branch-name" command pushes all of our changes up to the repository on GitHub to be pulled in</li>
+              <li>Navigate to your repository on GitHub. Click "Pull Requests" tab and then the "New pull request" button.</li>
+              <li>Make sure the base branch is main and the comparison branch is the feature branch you just updated. Add a title for the pull request along with a short description of the changes.</li>
+              <li>Click the "Create pull request" button.</li>
+              <li>Now we can merge the comparison branch into the base branch by selecting the "Merge pull request" button and then confirming the merge request.</li>
+              <li>If you had an issue open on GitHub for this change, you can now navigate to this issue, and close it.</li>
+              <li>Now, make sure you update the local main branch. Back in the command line, navigate to the main branch by entering: git checkout main</li>
+              <li>Then pull the remote main branch into the local main branch by entering: git pull origin main</li>
+            </ul>
+          </ul>
         </ul>
       </section>
 
@@ -71,10 +96,12 @@
           <li>This language is used to provide logic and interactivity for websites.</li>
           <li>Variable: a named container that allows us to store data in our code.</li>
           <li>Control flow: the order in which a computer executes code in a script.</li>
-          <li>Conditional logic:</li>
-          <li>Arrays:</li>
-          <li>Loops:</li>
-
+          <li>Conditional logic: a simple way to tell a computer to perform an action upon a certain condition being met.</li>
+          <li>Array: a single variable that is used to hold a group of related data.</li>
+          <li>Index: a unique number given to each individual data inside an array</li>
+          <li>Loops: a sequence of instructions that is continually repeated until a certain condition is reached.</li>
+          <li>Function: simply a set of instructions that tells the computer how to perform a task. A function must be called on if we want it to execute.</li>
+          <li>Use /* java script code is here */ to comment out code. This makes it inactive without deleting it, in case we need it again later.</li>
         </ul>
       </section>
 
@@ -99,7 +126,16 @@
           <li>Conditional statement: allow us to make decisions based on conditions in our code.</li>
           <li>For loop: an action that will repeat over and over again until a condition is met.</li>
           <li>Agile software development, AKA agile: a framework that helps developers handle change and uncertainty during the development process.</li>
-          <li>Command line interface, or CLI: a command-line program that allows us to input text commands to execute operating system functions, like opening a file or creating a new folder.</li>
+          <li>Command line interface, or CLI: a command-line program that allows us to input text commands to execute operating system functions, like opening a file or creating a new folder. Here are a commands to remember:</li>
+          <ul>
+            <li>ls: allows uss to see a list of files and directories on our computer, or in the current directory we are in.</li>
+            <li>cd: "change directories" will allow us to change directories. Type the directory you would like to change to after using this command, and press enter.</li>
+            <li>cd..: allows us to navigate backwards one directory at a time.</li>
+            <li>pwd: "print working directory" will print out the directory that we are currently in to the terminal.</li>
+            <li>mkdir: creates a directory. Type the name of the directory you would like to create after this command, and press enter.</li>
+            <li>touch: creates a new file. Type the name of the file you would like to create.type of file, and press enter.</li>
+            <li>open: opens a file. Type the name of the file you would like to open after this command, and press enter.</li>
+           </ul>
           <li>Graphical user interface, or GUI: includes icons and menus that allow users to navigate their system by using a mouse, touchpad, or assistive technology.</li>
           <li>Terminal: the application that allows us to interact with the shell.</li>
           <li>Shell: the software that interprets and executes the various commands that we type in the terminal.</li>
@@ -107,39 +143,66 @@
           <li>Homebrew: a package manager that makes it easy to install and update applications on macOS.</li>
           <li>Package: contains code written by others that we can add to and use on our computers and in our projects.</li>
           <li>Package manager: automates the process of isntalling, updating, configuring, and removing packages.</li>
-
+          <li>Pair programming: occurs when two developers collaborate on a feature or a project.</li>
+          <li>Driver-navigator model: one of the most common pair programming strategies. One developer uses a keyboard to type the code, known as the driver. The other developer is responsible for the overall direction that the pair decides to go, known as the navigator.</li>
+          <li>SSH key: an access credential for the secure shell, SSH, network protocol. Generating SSH keys allows developers to interface with certain remote services without having to constantly retype login information.</li>
+          <li>SSH agent: a program that keeps track of a user's identity keys and passphrases.</li>
+          <li>Web development project: a web application, or web app, that provides a solution to a real-world problem.</li>
+          <li>Minimum viable product, or MVP: this is usually the first iteration of a product without extra features. It is the first version that fulfills the requirements and proves that the solution to the program works.</li>
+          <li>Version control systems: allow us to track and manage changes to our codebase. Git is the most commonly used version control software among developers.</li>
+          <li>SHA, or hash: a unique identifier that allows us to keep a record of the specific changes committed to version control.</li>
+          <ul>
+            <li>SHA is actually a long string of numbers, or letters. Developers often type out only the first seven numbers or letters.</li>
+          </ul>
+          <li>Control flow: the order in which a computer executes code in a script.</li>
         </ul>
       </section>
 
       <section class="card" id="additional-information-and-resources-section">
         <h2>Additional Information & Resources</h2>
         <ul>
-          <li> <a href="https://coding-boot-camp.github.io/full-stack/computer-literacy/intro-computer-skills">Introduction to Computer Skills</a> </a> </li>
-          <li> <a href="https://coding-boot-camp.github.io/full-stack/computer-literacy/intro-computer-structure-organization">Introduction to Computer Structure and Organization</a> </a> </li>
-          <li> <a href=https://coding-boot-camp.github.io/full-stack/computer-literacy/advanced-computer-skills>Advanced Computer Skills</a> </a> </li>
-          <li> <a href="https://coding-boot-camp.github.io/full-stack/computer-literacy/web-literacy">Web Literacy</a> </a> </li>
-          <li> <a href="https://www.agilealliance.org/agile101/">Agile 101</a> </a> </li>
-          <li> <a href="https://www.agilealliance.org/agile101/the-agile-manifesto/">The Agile Manifesto</a> </a> </li>
-          <li> <a href="https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/">The 12 Principles behidn the Agile Manifesto</a> </a> </li>
-          <li> <a href="https://en.wikipedia.org/wiki/Character_encoding">Character Encoding</a> </a> </li>
-            <ul> <li> <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a></ul></li>
-          <li> <a href="https://brew.sh/">Homebrew</a> </a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">Meta tags</a> </a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">Meta tags</a> </a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">Meta tags</a> </a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">Meta tags</a> </a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">Meta tags</a> </a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">Meta tags</a> </a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">Meta tags</a> </a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">Meta tags</a> </a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">Meta tags</a> </a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">Meta tags</a> </a> </li>
-          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp">Meta tags</a> </a> </li>
+          <li> <a href="https://coding-boot-camp.github.io/full-stack/computer-literacy/intro-computer-skills" target="_blank">Introduction to Computer Skills</a> </a> </li>
+          <li> <a href="https://coding-boot-camp.github.io/full-stack/computer-literacy/intro-computer-structure-organization"target="_blank">Introduction to Computer Structure and Organization</a> </a> </li>
+          <li> <a href="https://coding-boot-camp.github.io/full-stack/computer-literacy/advanced-computer-skills" target="_blank">Advanced Computer Skills</a> </a> </li>
+          <li> <a href="https://coding-boot-camp.github.io/full-stack/computer-literacy/web-literacy"target="_blank">Web Literacy</a> </a> </li>
+          <li> <a href="https://www.agilealliance.org/agile101/"target="_blank">Agile 101</a> </a> </li>
+          <li> <a href="https://www.agilealliance.org/agile101/the-agile-manifesto/"target="_blank">The Agile Manifesto</a> </a> </li>
+          <li> <a href="https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/"target="_blank">The 12 Principles behidn the Agile Manifesto</a> </a> </li>
+          <li> <a href="https://brew.sh/"target="_blank">Homebrew</a> </a> </li>
+          <li> <a href="https://www.agilealliance.org/glossary/pairing/#q=~(infinite~false~filters~(postType~(~'page~'post~'aa_book~'aa_event_session~'aa_experience_report~'aa_glossary~'aa_research_paper~'aa_video)~tags~(~'pair*20programming))~searchTerm~'~sort~false~sortDirection~'asc~page~1)"target="_blank">Pair Programming</a> </a> </li>
+          <li> <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key"target="_blank">GitHub Docs on generating a new SSH key</a> </a> </li>
+          <li> <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent"target="_blank">Github Docs on adding your SSH key to the ssh-agent</a> </a> </li>
+          <li> <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account"target="_blank">GitHub Docs on adding a new SSH key to your GitHub account</a> </a> </li>
+          <li> <a href="https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git#setting-your-git-username-for-every-repository-on-your-computer"target="_blank">GitHub Docs on setting your Git username for every repository on your computer</a> </a> </li>
+          <li> <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-email-address-for-every-repository-on-your-computer"target="_blank">GitHub Docs on setting your email address for every repository on your computer</a> </a> </li>
+          <li> <a href="https://coding-boot-camp.github.io/full-stack/web-development/web-dev-project"target="_blank">What Makes Up a Web Development Project?</a> </a> </li>
+          <li> <a href="https://education.github.com/git-cheat-sheet-education.pdf"target="_blank">Git Command Cheat Sheet</a> </a> </li>
+          <li> <a href="https://digital.gov/resources/an-introduction-github/"target="_blank">An Introduction to GitHub</a> </a> </li>
+          <li> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository"target="_blank">GitHub Docs on licensing a repository</a> </a> </li>
+          <li> <a href="https://code.visualstudio.com/docs/setup/mac"target="_blank">VS Code Installation Guide for Mac</a> </a> </li>
+          <li> <a href="https://docs.github.com/en/get-started/quickstart/github-flow"target="_blank">GitHub Docs on GitHub flow</a> </a> </li>
+          <li> <a href="https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines"target="_blank">Pro Git book on commit messages</a> </a> </li>
+          <li> <a href="https://www.w3schools.com/tags/tag_meta.asp"target="_blank">W3School page on the HTML meta tag</a> </a> </li>
+          <li> <a href="https://en.wikipedia.org/wiki/Character_encoding"target="_blank">Character Encoding</a> </a> </li>
+          <ul> 
+            <li> <a href="https://en.wikipedia.org/wiki/UTF-8"target="_blank">UTF-8</a></li>
+          </ul>
+          <li> <a href="https://en.wikipedia.org/wiki/Separation_of_concerns"target="_blank">Wikipedia article about separation of concerns</a> </a> </li>
+          <li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"target="_blank">HTML Color Codes website</a> </a> </li>
+          <li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"target="_blank">MDN Web Docs on CSS</a> </a> </li>
+          <li> <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"target="_blank">MDN Web Docs on JavaScript basics</a> </a> </li>
+          <li> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"target="_blank">MDN Web Docs on JavaScript data types</a> </a> </li>
+          <li> <a href="https://developer.mozilla.org/en-US/docs/Web/API/Console/log"target="_blank">MDN Web Docs on console.log</a> </a> </li>
+          <li> <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy"target="_blank">MDN Web Docs on truthy</a> </a> </li>
+          <li> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math"target="_blank">MDN Web Docs on Math</a> </a> </li>
+          <li> <a href="https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide"target="_blank">Professional README Guide</a> </a> </li>
+          <li> <a href="https://dev.to/alexmercedcoder/in-depth-guide-on-understanding-deploying-web-apps-56ap"target="_blank">In-Depth Guide on Understanding Deploying Web Apps</a> </a> </li>
+          <li> <a href="https://coding-boot-camp.github.io/full-stack/"target="_blank">Full-Stack Blog</a> </a> </li>
+          <li> <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages"target="_blank">GitHub Docs on GitHub Pages</a> </a> </li>
+          <li> <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site"target="_blank">GitHub Docs on Creating a GitHub Pages site</a> </a> </li>
         </ul>
       </section>
    
-
-
     </main>
 
     <footer>
