@@ -19,7 +19,7 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>HTML stands for Hypertext Markup Language</li>
+          <li><span class="bolded">HTML</span> stands for Hypertext Markup Language</li>
           <li>HTML elements work together to build the structure of a webpage, and provide a framework that makes it easy for users to navigate the webpage.</li>
           <ul>
             <li>This can be text, images, or parts of a page's layout</li>
@@ -28,12 +28,12 @@
           <li>Metadata is data about our webpage that the broswer uses to effectively serve our webpage to users.</li>
           <li>Inside the head elements, we can use the following metadata tags:</li>
             <ul>
-              <li>title: defines the title for the webpage. This element is required and is extremely important for Search Engine Optimiziation.</li>
-              <li>style: defines the CSS styles associated with a website.</li>
-              <li>base: defines the base URL for a webpage.</li>
-              <li>link: connects an external resource to the HTML document.</li>
-              <li>meta: defines metadata such as the character set, description, keywords, author, and viewport.</li>
-              <li>script: embeds client-side scripts in the HTML document.</li>
+              <li><span class="bolded">title:</span> defines the title for the webpage. This element is required and is extremely important for Search Engine Optimiziation.</li>
+              <li><span class="bolded">style:</span> defines the CSS styles associated with a website.</li>
+              <li><span class="bolded">base:</span> defines the base URL for a webpage.</li>
+              <li><span class="bolded">link:</span> connects an external resource to the HTML document.</li>
+              <li><span class="bolded">meta:</span> defines metadata such as the character set, description, keywords, author, and viewport.</li>
+              <li><span class="bolded">script:</span> embeds client-side scripts in the HTML document.</li>
 
             </ul>
           <li>The body elements represents the visible content shown to the user.</li>
@@ -51,6 +51,23 @@
           <li>A margin indicates how much space we want around the outside of an element.</li>
           <li>A padding indicates how much space we want around the content inside an element.</li>
         </ul>
+        <ul>
+          <li><span class="bolded">class attribute</span> can be assigned to any viewable HTML element. It is used to assign a CSS class to items and can be used for mulitiple items.</li>
+          <ul>
+            <li>class is represented by a . in CSS</li>
+          </ul>
+          <li><span class="bolded">id attribute</span> can be assigned to only one single viewable HTML element. It's value is always unique per webpage and cannot be usued for multiple items.</li>
+          <ul>
+            <li>id is represented by a # is CSS</li>
+          </ul>
+          <li><span class="bolded">universal attribute</span> can be assigned to the entire documents HTML.</li>
+          <ul>
+            <li>universal is represented by a * in CSS</li>
+          </ul>
+
+          <li>span is an inline container that is sued to mark up part of a text, or part of a document.</li>
+
+        </ul>
       </section>
    
       <section class="card" id="git-section">
@@ -67,16 +84,16 @@
           
           <li>Git commands: always start with git, and are used to save and track versions of your code. Using git commands, we can initaiate or create a repo, add our code to the repo, and view the different versions of our code, which are each stored in a unique commit.</li>
           <ul>
-            <li>git revert: this command, followed by the SHA, is used to revert a project back to an older version. This is often used after discovering a bug in your code.</li>
-            <li>git status: checks what branch we are currently on</li>
-            <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+            <li><span class="bolded">git revert</span> command, followed by the SHA, is used to revert a project back to an older version. This is often used after discovering a bug in your code.</li>
+            <li><span class="bolded">git status</span> command checks what branch we are currently on</li>
+            <li><span class="bolded">git checkout -b branch-name</span> command creates a new branch and switches to it</li>
             <li>After making changes to a branch in VS Code, you need to sync your working branch back to the main branch. This is called the git flow.</li>
             <li>Performing the Git flow:</li>
             <ul>
-              <li>git add -A command to stage a commit for all files in the working branch.</li>
-              <li>git commit -m "insert description here" command commits any changes with a short descriptive message of the changes implemented.</li>
-              <li>git pull origin main command pulls the base branch into our feature branch so that it is syncing with the most up to date version in the repo</li>
-              <li>git push origin "branch-name" command pushes all of our changes up to the repository on GitHub to be pulled in</li>
+              <li><span class="bolded">git add -A</span> command to stage a commit for all files in the working branch.</li>
+              <li><span class="bolded">git commit -m "insert description here"</span> command commits any changes with a short descriptive message of the changes implemented.</li>
+              <li><span class="bolded">git pull origin main</span> command pulls the base branch into our feature branch so that it is syncing with the most up to date version in the repo</li>
+              <li><span class="bolded">git push origin "branch-name"</span> command pushes all of our changes up to the repository on GitHub to be pulled in</li>
               <li>Navigate to your repository on GitHub. Click "Pull Requests" tab and then the "New pull request" button.</li>
               <li>Make sure the base branch is main and the comparison branch is the feature branch you just updated. Add a title for the pull request along with a short description of the changes.</li>
               <li>Click the "Create pull request" button.</li>
@@ -94,13 +111,13 @@
         <ul>
           <li>JS stands for JavaScript.</li>
           <li>This language is used to provide logic and interactivity for websites.</li>
-          <li>Variable: a named container that allows us to store data in our code.</li>
-          <li>Control flow: the order in which a computer executes code in a script.</li>
-          <li>Conditional logic: a simple way to tell a computer to perform an action upon a certain condition being met.</li>
-          <li>Array: a single variable that is used to hold a group of related data.</li>
-          <li>Index: a unique number given to each individual data inside an array</li>
-          <li>Loops: a sequence of instructions that is continually repeated until a certain condition is reached.</li>
-          <li>Function: simply a set of instructions that tells the computer how to perform a task. A function must be called on if we want it to execute.</li>
+          <li><span class="bolded">Variable:</span> a named container that allows us to store data in our code.</li>
+          <li><span class="bolded">Control flow:</span> the order in which a computer executes code in a script.</li>
+          <li><span class="bolded">Conditional logic:</span> a simple way to tell a computer to perform an action upon a certain condition being met.</li>
+          <li><span class="bolded">Array:</span> a single variable that is used to hold a group of related data.</li>
+          <li><span class="bolded">Index:</span> a unique number given to each individual data inside an array</li>
+          <li><span class="bolded">Loops:</span> a sequence of instructions that is continually repeated until a certain condition is reached.</li>
+          <li><span class="bolded">Function:</span> simply a set of instructions that tells the computer how to perform a task. A function must be called on if we want it to execute.</li>
           <li>Use /* java script code is here */ to comment out code. This makes it inactive without deleting it, in case we need it again later.</li>
         </ul>
       </section>
